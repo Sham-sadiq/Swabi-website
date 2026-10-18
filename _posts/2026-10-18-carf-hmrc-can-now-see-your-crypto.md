@@ -2,8 +2,6 @@
 title: "HMRC can now see your crypto: what CARF means for UK investors"
 description: "From January 2026, UK crypto platforms collect and report their users' transactions to HMRC. Here's what that means for you, and what to do if your past returns don't match."
 tags: [HMRC, CARF, Compliance]
-# DRAFT: please review before publishing. Change false to true (or delete this line) to publish.
-published: false
 ---
 
 If you buy, sell, swap or earn crypto through a UK exchange, HMRC is about to get a much clearer picture of what you've been doing. Here's what's changed, and what it means for you.
