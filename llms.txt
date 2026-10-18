@@ -3,7 +3,7 @@
 > Swabi is a UK crypto tax specialist practice. It helps individuals and businesses
 > work out and report the tax due on cryptoassets to HMRC, put right previous years,
 > and plan ahead. Founded and led by Sham Sadiq, a qualified Chartered Management
-> Accountant with 6+ years of crypto tax experience.
+> Accountant (CIMA) with 6+ years of crypto tax experience.
 
 ## Who we help
 - Individuals with crypto: investors, traders, and people earning from staking, mining, airdrops, DeFi or NFTs
@@ -27,10 +27,11 @@
 7. Report delivery and support
 
 ## Where we work
-Clients across the United Kingdom.
+Fully remote, serving individuals and businesses across the whole of the United Kingdom.
+Calls, onboarding and report delivery are handled by phone, online and email.
 
 ## Credentials
-- Sham Sadiq: qualified Chartered Management Accountant
+- Sham Sadiq: qualified Chartered Management Accountant, member of the Chartered Institute of Management Accountants (CIMA)
 - 6+ years of crypto tax expertise
 - Winner of the Leadership Award for Women in Business (2025)
 
