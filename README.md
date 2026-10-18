@@ -2,21 +2,29 @@
 
 Redesign of [swabi.onepage.me](https://swabi.onepage.me/), Swabi's crypto tax practice site, built to live at **swabi.co.uk**.
 
-It is a single static page (`index.html`) with no build step and no dependencies, so it can be hosted for free on GitHub Pages, Netlify or Cloudflare Pages.
+Hosted free on GitHub Pages, which builds it with Jekyll automatically on every change. There's nothing to install.
+
+**To add a blog post, see [BLOGGING.md](BLOGGING.md).**
 
 ## Files
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | The whole site: markup, styles and a small script |
-| `assets/` | Logo mark, favicon, portrait, social share image |
-| `robots.txt`, `sitemap.xml` | For search engines |
+| `index.html` | Home page content |
+| `blog/index.html` | Blog listing page (swabi.co.uk/blog/) |
+| `_posts/` | Blog posts, one Markdown file each |
+| `_layouts/`, `_includes/` | Shared page shell: head, header, footer, post template |
+| `assets/css/site.css`, `assets/js/site.js` | Styles and script for every page |
+| `assets/` | Logo, favicon, portrait, social image; `assets/blog/` for post images |
+| `_config.yml` | Site settings (address, blog URL format, feed, sitemap) |
+
+The sitemap (`/sitemap.xml`) and RSS feed (`/blog/feed.xml`) are generated automatically.
 
 ## Configured
 
 - **Contact form:** posts to Formspree (`https://formspree.io/f/xqpeypdd`). Confirm the form's email the first time a submission arrives.
 - **Socials:** Facebook and the r/Crypto_Taxes_UK subreddit, plus WhatsApp and email.
-- **Custom domain:** `CNAME` contains `swabi.co.uk` for GitHub Pages. `.nojekyll` serves files as-is.
+- **Custom domain:** `CNAME` contains `swabi.co.uk` for GitHub Pages.
 
 ## Still to do
 
@@ -26,4 +34,4 @@ It is a single static page (`index.html`) with no build step and no dependencies
 
 ## Preview locally
 
-Open `index.html` in a browser, or run `python3 -m http.server` and visit http://localhost:8000.
+Needs Ruby: `bundle install`, then `bundle exec jekyll serve --unpublished` and visit http://localhost:4000.

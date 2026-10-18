@@ -1,0 +1,13 @@
+{%- assign p = include.post -%}
+{%- assign w = p.content | strip_html | number_of_words | divided_by: 200 | at_least: 1 -%}
+<a class="post-card" href="{{ p.url }}">
+  {%- if p.image %}
+  <img src="{{ p.image }}" alt="" loading="lazy">
+  {%- endif %}
+  <div class="post-card-body">
+    <span class="post-meta"><time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: "%-d %b %Y" }}</time> · {{ w }} min read</span>
+    <h3>{{ p.title }}</h3>
+    <p>{% if p.description %}{{ p.description }}{% else %}{{ p.excerpt | strip_html | strip_newlines | truncate: 150 }}{% endif %}</p>
+    <span class="read-more">Read article <svg><use href="#i-arrow"/></svg></span>
+  </div>
+</a>

@@ -1,0 +1,32 @@
+---
+layout: default
+title: Crypto Tax Blog
+description: Plain-English guides to UK crypto tax, HMRC rules and record-keeping from Swabi's crypto tax specialists.
+---
+<main id="main">
+  <section class="blog-hero">
+    <div class="wrap">
+      <span class="eyebrow">The Swabi blog</span>
+      <h1>Crypto tax, explained simply.</h1>
+      <p class="lede">Plain-English guides to UK crypto tax, HMRC rules and keeping your records in order.</p>
+    </div>
+  </section>
+
+  <section class="section blog-list">
+    <div class="wrap">
+      {%- if site.posts.size > 0 %}
+      <div class="post-grid">
+        {%- for post in site.posts %}
+        {% include post-card.html post=post %}
+        {%- endfor %}
+      </div>
+      {%- else %}
+      <div class="blog-empty">
+        <h2>First articles coming soon</h2>
+        <p>In the meantime, if you have a question about your crypto tax, we're happy to help.</p>
+        <a class="btn btn-primary" href="/#contact"><svg><use href="#i-cal"/></svg>Book a free discovery call</a>
+      </div>
+      {%- endif %}
+    </div>
+  </section>
+</main>

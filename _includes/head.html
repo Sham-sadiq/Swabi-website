@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{%- if page.url == "/" %}
+<title>{{ site.home_title | escape }}</title>
+{%- else %}
+<title>{{ page.title }} | Swabi</title>
+{%- endif %}
+{%- capture desc %}{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
+<meta name="description" content="{{ desc | strip | escape }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<meta name="theme-color" content="#3d2f8f">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+
+<meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="Swabi">
+<meta property="og:title" content="{% if page.url == '/' %}Swabi | UK Crypto Tax Specialists{% else %}{{ page.title | escape }}{% endif %}">
+<meta property="og:description" content="{{ desc | strip | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ page.image | default: '/assets/og-image.jpg' | absolute_url }}">
+<meta name="twitter:card" content="summary_large_image">
+{%- if page.layout == 'post' %}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{%- endif %}
+{% feed_meta %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css?v={{ site.time | date: '%s' }}">

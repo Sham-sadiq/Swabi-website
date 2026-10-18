@@ -1,0 +1,30 @@
+# Site settings (GitHub Pages builds this site with Jekyll)
+title: Swabi
+home_title: "Swabi | UK Crypto Tax Specialists – HMRC-Compliant Returns & Advice"
+description: >-
+  Swabi helps UK investors and businesses get their crypto tax right: capital gains,
+  staking and DeFi income, HMRC disclosures, backdated reporting and tax planning.
+  Book a free discovery call.
+url: "https://swabi.co.uk"
+baseurl: ""
+timezone: Europe/London
+lang: en-GB
+
+# Blog posts live in _posts/ and are published at /blog/<post-name>/
+permalink: /blog/:title/
+excerpt_separator: "<!--more-->"
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post, author: Sham Sadiq }
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+feed:
+  path: blog/feed.xml
+
+exclude:
+  - README.md
+  - BLOGGING.md
+  - Gemfile
+  - Gemfile.lock
