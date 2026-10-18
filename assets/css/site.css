@@ -370,3 +370,8 @@ footer a:hover { color: #fff; }
   .prose { font-size: 1.02rem; }
   .post-cta .btn { width: 100%; }
 }
+
+/* ---------- About page ---------- */
+.about h1 { font-size: clamp(2.2rem, 4.6vw, 3.2rem); }
+.about-cta { padding: 0 0 clamp(56px, 8vw, 96px); }
+.about-cta .post-cta { margin: 0; }
