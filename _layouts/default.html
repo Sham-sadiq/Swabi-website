@@ -4,6 +4,8 @@
   {% include head.html %}
   {%- if page.url == "/" %}
   {% include jsonld.html %}
+  {%- elsif page.url == "/about/" %}
+  {% include person-jsonld.html %}
   {%- endif %}
 </head>
 <body>

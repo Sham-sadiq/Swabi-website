@@ -1,0 +1,27 @@
+[
+  {
+    "q": "Do I have to pay tax on crypto in the UK?",
+    "a": "Often, yes. HMRC treats most cryptoassets as property, so selling, swapping or spending crypto can trigger Capital Gains Tax. Income such as staking rewards, mining and some airdrops can be subject to Income Tax. Whether you owe anything depends on your gains, losses and allowances, which is exactly what we work out for you."
+  },
+  {
+    "q": "What are the \"new crypto tax rules\" I keep hearing about?",
+    "a": "From 1 January 2026, UK crypto exchanges and platforms must collect details about their users and transactions and report them to HMRC under the OECD's Cryptoasset Reporting Framework (CARF). HMRC will be able to match that data against tax returns, so it's more important than ever that your reporting is complete and accurate.",
+    "id": "faq-carf"
+  },
+  {
+    "q": "I haven't reported crypto in previous years. What should I do?",
+    "a": "Don't panic, and don't ignore it. We can reconstruct your historical transactions, work out what's owed and help you make a voluntary disclosure to HMRC. Coming forward yourself is generally treated far more favourably than waiting for HMRC to get in touch."
+  },
+  {
+    "q": "My records are a mess: multiple exchanges, wallets, DeFi. Can you still help?",
+    "a": "Yes, that's what we do. Our Crypto Diagnostic reviews your wallets, exchanges and DeFi activity, finds the gaps, errors and duplicates, and gives you a clear plan, timeline and cost to get fully compliant."
+  },
+  {
+    "q": "Do you work with businesses as well as individuals?",
+    "a": "Absolutely. We support companies that accept or pay in crypto, hold crypto on the balance sheet, trade, or pay dividends in crypto, covering bookkeeping, Corporation Tax reporting and guidance on HMRC treatment."
+  },
+  {
+    "q": "What happens on the free discovery call?",
+    "a": "It's a relaxed, no-obligation conversation about your crypto activity and circumstances. You'll come away knowing what needs doing and how we can help, with no pressure to proceed."
+  }
+]

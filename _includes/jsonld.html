@@ -1,22 +1,43 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "AccountingService",
-  "name": "Swabi",
-  "url": "https://swabi.co.uk/",
-  "logo": "https://swabi.co.uk/assets/swabi-mark.png",
-  "image": "https://swabi.co.uk/assets/sham-sadiq.jpg",
-  "description": "Specialist crypto tax returns, reconciliation, HMRC disclosures and tax planning for UK individuals and businesses.",
-  "email": "contact@swabi.co.uk",
-  "telephone": "+447488883219",
-  "areaServed": { "@type": "Country", "name": "United Kingdom" },
-  "founder": {
-    "@type": "Person",
-    "name": "Sham Sadiq",
-    "jobTitle": "CEO & Co-Founder",
-    "hasCredential": "Chartered Management Accountant"
-  },
-  "sameAs": ["https://www.facebook.com/share/1EW7VdfAvY/", "https://www.reddit.com/r/Crypto_Taxes_UK/"],
-  "knowsAbout": ["Cryptocurrency taxation", "Capital Gains Tax", "HMRC Self Assessment", "DeFi", "NFT tax", "Corporation Tax"]
+  "@graph": [
+    {
+      "@type": "AccountingService",
+      "@id": "https://swabi.co.uk/#business",
+      "name": "Swabi",
+      "url": "https://swabi.co.uk/",
+      "logo": "https://swabi.co.uk/assets/swabi-mark.png",
+      "image": "https://swabi.co.uk/assets/sham-sadiq.jpg",
+      "description": "Specialist crypto tax returns, reconciliation, HMRC disclosures and tax planning for UK individuals and businesses.",
+      "email": "contact@swabi.co.uk",
+      "telephone": "+447488883219",
+      "areaServed": { "@type": "Country", "name": "United Kingdom" },
+      "founder": { "@id": "https://swabi.co.uk/about/#sham" },
+      "sameAs": ["https://www.facebook.com/share/1EW7VdfAvY/", "https://www.reddit.com/r/Crypto_Taxes_UK/"],
+      "knowsAbout": ["Cryptoasset taxation", "Capital Gains Tax", "HMRC Self Assessment", "Corporation Tax", "DeFi", "NFTs", "Cryptoasset Reporting Framework (CARF)"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Crypto tax services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crypto Tax Returns (Individuals)", "description": "Capital gains calculations, income from staking, mining and airdrops, NFT transactions and full Self Assessment support." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crypto for Businesses", "description": "Accounting and Corporation Tax for companies that receive, pay, hold or trade crypto." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crypto Diagnostic", "description": "A full review of wallets, exchanges and DeFi activity with a clear action plan, timeline and cost to become compliant." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Portfolio & Wallet Reconciliation", "description": "Wallet and exchange review, identification of taxable events and voluntary disclosures to HMRC." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Backdated Reporting", "description": "Reconstruction of historical crypto transactions and support with HMRC enquiries." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tax Planning & Advice", "description": "Timing disposals, using losses and structuring crypto investments tax-efficiently." } }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://swabi.co.uk/#faq",
+      "mainEntity": [
+        {%- for item in site.data.faq %}
+        { "@type": "Question", "name": {{ item.q | jsonify }}, "acceptedAnswer": { "@type": "Answer", "text": {{ item.a | jsonify }} } }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }
+  ]
 }
 </script>
