@@ -47,8 +47,8 @@ layout: default
         <p class="lede">Crypto moves fast, and keeping up with the tax rules can be overwhelming. At Swabi, we help investors and businesses navigate crypto tax with clear guidance, expert support and a straightforward approach that takes the stress out of staying compliant.</p>
       </div>
 
-      <div class="services-grid two">
-        <article class="card reveal" style="--c:var(--sky);--c2:var(--sky-2)">
+      <div class="services-grid two expand-grid">
+        <article class="card expandable reveal" style="--c:var(--sky);--c2:var(--sky-2)">
           <span class="tag">Individuals</span>
           <div class="icon"><svg><use href="#i-doc"/></svg></div>
           <h3>Crypto Tax Returns</h3>
@@ -60,9 +60,33 @@ layout: default
             <li>HMRC-compliant reporting</li>
             <li>Full Self Assessment support</li>
           </ul>
+
+          <div class="card-more" id="more-individuals" hidden>
+            <h4>What we cover</h4>
+            <ul class="ticks">
+              <li>Gains and losses on selling, swapping or spending crypto, using HMRC's matching rules (same-day, 30-day and pooled cost)</li>
+              <li>Income from staking, mining, airdrops and crypto received for work</li>
+              <li>DeFi activity such as lending, liquidity pools and yield farming</li>
+              <li>Buying, selling and minting NFTs</li>
+              <li>Using losses, including claims for tokens that have become worthless</li>
+              <li>Completing the cryptoasset sections of your Self Assessment return</li>
+            </ul>
+            <h4>Things to consider</h4>
+            <ul class="dots">
+              <li><strong>Swaps count.</strong> Exchanging one token for another is a disposal for Capital Gains Tax, even if you never cash out to pounds.</li>
+              <li><strong>Everything is valued in pounds.</strong> Each transaction needs a sterling value at the time it happened.</li>
+              <li><strong>Allowances are small.</strong> The Capital Gains Tax annual exempt amount is £3,000, and you may need to report disposals even when your gains are covered by it.</li>
+              <li><strong>Deadlines.</strong> The tax year runs 6 April to 5 April, and online returns are due by 31 January after it ends.</li>
+              <li><strong>Moving between your own wallets</strong> isn't taxable, but it has to be tracked to keep your cost figures right.</li>
+            </ul>
+            <h4>What we'll need from you</h4>
+            <p>Transaction exports (or read-only access) for each exchange, your wallet addresses, and copies of any previous returns.</p>
+            <a class="btn btn-dark" href="#contact" data-topic="Crypto tax return (individual)"><svg><use href="#i-cal"/></svg>Book a free call about this</a>
+          </div>
+          <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-individuals"><span>See what's included</span><svg><use href="#i-chevron"/></svg></button>
         </article>
 
-        <article class="card reveal" style="--c:var(--mint);--c2:var(--mint-2)">
+        <article class="card expandable reveal" style="--c:var(--mint);--c2:var(--mint-2)">
           <span class="tag">Businesses</span>
           <div class="icon"><svg><use href="#i-brief"/></svg></div>
           <h3>Crypto for Businesses</h3>
@@ -76,6 +100,30 @@ layout: default
             <li>Bookkeeping for crypto transactions</li>
             <li>Guidance on HMRC treatment</li>
           </ul>
+
+          <div class="card-more" id="more-businesses" hidden>
+            <h4>What we cover</h4>
+            <ul class="ticks">
+              <li>Accounting for crypto held by your company, including year-end valuations</li>
+              <li>Recording crypto received from customers, and payments made to suppliers in crypto</li>
+              <li>Paying staff or directors in crypto, including PAYE and National Insurance considerations</li>
+              <li>Profit calculations for trading activity</li>
+              <li>Corporation Tax computations and returns</li>
+              <li>Bookkeeping set-up so crypto transactions flow into your accounting software</li>
+            </ul>
+            <h4>Things to consider</h4>
+            <ul class="dots">
+              <li><strong>No personal allowance.</strong> Companies don't get the individual Capital Gains Tax allowance; gains form part of profits taxed under Corporation Tax.</li>
+              <li><strong>Payments in crypto are still sales.</strong> They're recorded at their pound value when received, and any later rise or fall in value is a separate gain or loss.</li>
+              <li><strong>VAT still applies</strong> to taxable sales paid for in crypto, based on their sterling value.</li>
+              <li><strong>Paying people in crypto</strong> can bring it within PAYE, so it needs setting up correctly.</li>
+              <li><strong>Keep company and personal wallets separate,</strong> with a clear audit trail of who owns what.</li>
+            </ul>
+            <h4>What we'll need from you</h4>
+            <p>Company wallet addresses and exchange accounts, your accounting software access, and your latest accounts.</p>
+            <a class="btn btn-dark" href="#contact" data-topic="Crypto for my business"><svg><use href="#i-cal"/></svg>Book a free call about this</a>
+          </div>
+          <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-businesses"><span>See what's included</span><svg><use href="#i-chevron"/></svg></button>
         </article>
       </div>
     </div>

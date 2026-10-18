@@ -48,6 +48,33 @@
     });
   }
 
+  // Expandable service cards: the button (or a click anywhere on the card) shows more detail
+  document.querySelectorAll('.card.expandable').forEach(function (card) {
+    var btn = card.querySelector('.more-btn');
+    var panel = document.getElementById(btn.getAttribute('aria-controls'));
+    var label = btn.querySelector('span');
+    function toggle() {
+      var open = btn.getAttribute('aria-expanded') !== 'true';
+      btn.setAttribute('aria-expanded', open);
+      panel.hidden = !open;
+      card.classList.toggle('open', open);
+      label.textContent = open ? 'Show less' : "See what's included";
+    }
+    btn.addEventListener('click', function (e) { e.stopPropagation(); toggle(); });
+    card.addEventListener('click', function (e) {
+      if (card.classList.contains('open') || e.target.closest('a, button')) return;
+      toggle();
+    });
+  });
+
+  // Buttons that pick a topic in the contact form
+  document.querySelectorAll('[data-topic]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var sel = document.getElementById('topic');
+      if (sel) sel.value = a.getAttribute('data-topic');
+    });
+  });
+
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 

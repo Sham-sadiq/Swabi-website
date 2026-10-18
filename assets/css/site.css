@@ -382,3 +382,27 @@ footer a:hover { color: #fff; }
 
 /* How it works page */
 .process h1 { font-size: clamp(2.2rem, 4.6vw, 3.2rem); }
+
+/* Expandable service cards */
+.expand-grid { align-items: start; }
+.card.expandable { cursor: pointer; display: flex; flex-direction: column; }
+.card.expandable.open { cursor: default; box-shadow: var(--shadow); transform: none; }
+.card-more { margin-top: 22px; padding-top: 22px; border-top: 1px solid rgba(21,19,31,.1); cursor: auto; }
+.card-more:not([hidden]) { animation: more-in .3s ease; }
+.card-more h4 { font-size: .8rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2); margin: 22px 0 12px; }
+.card-more h4:first-child { margin-top: 0; }
+.card-more p { font-size: .96rem; margin: 0 0 18px; }
+.card-more .btn { margin-top: 4px; }
+.dots { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; font-size: .96rem; }
+.dots li { position: relative; padding-left: 20px; }
+.dots li::before { content: ""; position: absolute; left: 2px; top: 10px; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+.more-btn {
+  align-self: flex-start; margin-top: 20px; display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,.7); border: 0; border-radius: 999px; padding: 10px 16px; cursor: pointer;
+  font: 700 .92rem/1 inherit; font-family: inherit; color: var(--ink);
+}
+.more-btn:hover { background: #fff; }
+.more-btn svg { width: 18px; height: 18px; transition: transform .2s ease; }
+.more-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
+@keyframes more-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .card-more:not([hidden]) { animation: none; } }
