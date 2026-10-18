@@ -26,15 +26,31 @@ layout: default
     </div>
   </section>
 
-  <!-- WHY NOW -->
-  <section class="alert-band" aria-labelledby="carf-title">
+  <!-- LATEST BLOG POST -->
+  {%- assign latest = site.posts.first %}
+  <section class="alert-band" aria-labelledby="latest-title">
     <div class="wrap alert-inner">
-      <span class="badge"><svg style="color:#fff"><use href="#i-bell"/></svg></span>
+      <span class="badge"><svg style="color:#fff"><use href="#i-doc"/></svg></span>
+      {%- if latest %}
       <div>
-        <h2 id="carf-title">HMRC can now see your crypto activity.</h2>
-        <p>Since 1 January 2026, UK crypto platforms have been collecting user and transaction details to report to HMRC under the Cryptoasset Reporting Framework (CARF). Make sure your returns match what HMRC sees.</p>
+        <span class="band-label">Latest from the blog · <time datetime="{{ latest.date | date_to_xmlschema }}">{{ latest.date | date: "%-d %B %Y" }}</time></span>
+        <h2 id="latest-title"><a href="{{ latest.url }}">{{ latest.title }}</a></h2>
+        <p>{% if latest.description %}{{ latest.description }}{% else %}{{ latest.excerpt | strip_html | strip_newlines | truncate: 170 }}{% endif %}</p>
       </div>
-      <a class="more" href="#faq-carf">What this means for you</a>
+      <div class="band-links">
+        <a class="more" href="{{ latest.url }}">Read article</a>
+        <a class="more subtle" href="/blog/">All articles</a>
+      </div>
+      {%- else %}
+      <div>
+        <span class="band-label">From the blog</span>
+        <h2 id="latest-title">Crypto tax, explained simply.</h2>
+        <p>Plain-English guides to UK crypto tax and HMRC rules are on their way. Visit the blog to see the latest articles.</p>
+      </div>
+      <div class="band-links">
+        <a class="more" href="/blog/">Visit the blog</a>
+      </div>
+      {%- endif %}
     </div>
   </section>
 

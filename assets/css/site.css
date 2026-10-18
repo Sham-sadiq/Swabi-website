@@ -406,3 +406,11 @@ footer a:hover { color: #fff; }
 .more-btn[aria-expanded="true"] svg { transform: rotate(180deg); }
 @keyframes more-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .card-more:not([hidden]) { animation: none; } }
+
+/* Latest blog post banner */
+.band-label { display: block; font-size: .76rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #a9a3c4; margin-bottom: 6px; }
+.alert-inner h2 a { color: #fff; text-decoration: none; }
+.alert-inner h2 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.band-links { display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+.alert-inner a.more.subtle { border-bottom-color: rgba(255,255,255,.35); font-weight: 600; color: #cfcbe0; }
+@media (max-width: 860px) { .alert-inner { align-items: start; } .band-links { grid-column: 2; flex-direction: row; gap: 20px; } }
