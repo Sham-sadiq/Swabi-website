@@ -6,7 +6,7 @@
     </a>
     <ul class="nav-links" id="nav-links">
       <li><a href="/#services">Services</a></li>
-      <li><a href="/#process">How it works</a></li>
+      <li><a href="/how-it-works/"{% if page.url == "/how-it-works/" %} aria-current="page"{% endif %}>How it works</a></li>
       <li><a href="/about/"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a></li>
       <li><a href="/#faq">FAQs</a></li>
       <li><a href="/blog/"{% if page.url contains '/blog/' %} aria-current="page"{% endif %}>Blog</a></li>

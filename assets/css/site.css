@@ -184,7 +184,7 @@ p { margin: 0 0 1em; }
 .about .ticks { gap: 12px; font-size: 1rem; }
 
 /* FAQ */
-.faq { background: var(--bg-soft); }
+.specialist, #contact { background: var(--bg-soft); }
 .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
 .faq-list { display: grid; gap: 12px; }
 details { background: #fff; border-radius: 18px; border: 1px solid var(--line); padding: 0 24px; }
@@ -375,3 +375,10 @@ footer a:hover { color: #fff; }
 .about h1 { font-size: clamp(2.2rem, 4.6vw, 3.2rem); }
 .about-cta { padding: 0 0 clamp(56px, 8vw, 96px); }
 .about-cta .post-cta { margin: 0; }
+
+/* Two-column service groups */
+.services-grid.two { grid-template-columns: repeat(2, 1fr); max-width: 980px; margin-left: auto; margin-right: auto; }
+@media (max-width: 600px) { .services-grid.two { grid-template-columns: 1fr; } }
+
+/* How it works page */
+.process h1 { font-size: clamp(2.2rem, 4.6vw, 3.2rem); }
