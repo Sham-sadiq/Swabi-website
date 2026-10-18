@@ -26,5 +26,6 @@ feed:
 exclude:
   - README.md
   - BLOGGING.md
+  - CLAUDE.md
   - Gemfile
   - Gemfile.lock
