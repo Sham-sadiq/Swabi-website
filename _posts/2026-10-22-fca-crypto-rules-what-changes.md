@@ -1,6 +1,7 @@
 ---
 title: "The UK's new crypto rules: what changes for investors"
 description: "The FCA has published its final rules for UK crypto firms, expected to start on 25 October 2027. Here is what they mean for you, and what they don't change."
+date: 2026-10-22 23:00:00 +0100
 tags: [FCA, Regulation, Compliance]
 image: /assets/blog/fca-crypto-rules-what-changes-1.jpg
 image_alt: "The UK's new crypto rules: what the FCA's final rules mean for you"
