@@ -11,6 +11,8 @@ Recently I went to a networking event for accountants. When it came to introduct
 
 <!--more-->
 
+<video controls playsinline preload="metadata" style="width:100%;max-width:420px;border-radius:12px"><source src="/assets/blog/posting-about-crypto-isnt-knowing-crypto.mp4" type="video/mp4"></video>
+
 I'll be honest, that annoyed me. Not because they shared something. Because of what it suggests.
 
 ## Two posts in over a year
